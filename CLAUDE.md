@@ -7,7 +7,8 @@ Bu dosya Claude Code'a (ve diğer AI asistanlara) TopoHub projesi hakkında bağ
 TopoHub, topoloji eğitmeni Kadirhan Polat'ın öğrenciler için geliştirdiği, pi-base/web (MIT) forkundan türetilmiş, Türkçe arayüzlü topoloji bilgi tabanı. Kaynaklar:
 
 - Pi-base orijinal: <https://topology.pi-base.org> ve <https://github.com/pi-base>
-- TopoHub fork (web): <https://github.com/kadirhanpolat/topohub>
+- TopoHub kök repo (bu klasör): <https://github.com/kadirhanpolat/topohub>
+- TopoHub web fork: <https://github.com/kadirhanpolat/topohub-web>
 
 ## Mimari (Önemli Kararlar)
 

@@ -50,14 +50,14 @@ Gereksinimler:
 
 ```bash
 # 1. Kök klasörü klonla (bu repo)
-git clone <topohub-master-repo> topohub
+git clone https://github.com/kadirhanpolat/topohub.git
 cd topohub
 
 # 2. pi-base/data'yı al
-git clone https://github.com/pi-base/data.git
+git clone https://github.com/pi-base/data.git data
 
-# 3. Kendi fork'unuzu (web) klonla
-git clone https://github.com/<kullaniciAdi>/topohub.git web
+# 3. Web fork'unu klonla (varsayılan: kadirhanpolat/topohub-web)
+git clone https://github.com/kadirhanpolat/topohub-web.git web
 
 # 4. Bağımlılıkları kur
 cd web
