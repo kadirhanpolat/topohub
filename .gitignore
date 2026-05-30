@@ -1,0 +1,34 @@
+# Alt git repolari (kendi git dizinleri var)
+data/
+web/
+
+# Gecici/turetilmis dosyalar
+*.log
+node_modules/
+dist/
+.svelte-kit/
+
+# Sozluk export gecici dosyalari
+property-names.json
+space-names.json
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
