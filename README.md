@@ -25,12 +25,12 @@ Topoloji öğretimi için etkileşimli web uygulaması. [pi-Base](https://github
 | **Teorem sayısı** | 902 |
 | **Trait sayısı** | 2099 |
 | **Diller** | Türkçe, İngilizce (otomatik tespit + manuel seçici) |
-| **Türkçe terim sözlüğü** | 80 özellik + 70 uzay (genişletilebilir) |
+| **Türkçe terim sözlüğü** | 243 özellik + 222 uzay (%100 kapsam) |
 
 Pi-Base'in tüm matematiksel verisini ve çıkarım motorunu kullanır; üstüne TopoHub'ın eklediği özellikler:
 
 - **Türkçe arayüz** — navbar, başlıklar, footer, ana sayfa, formlar
-- **Türkçe terim sözlüğü** — `compact → tıkız`, `hausdorff → Hausdorff`, `sorgenfrey line → Sorgenfrey doğrusu` gibi
+- **Türkçe terim sözlüğü** — tüm 243 özellik + 222 uzay Türkçe; `compact → tıkız`, `Sorgenfrey line → Sorgenfrey doğrusu` vb.
 - **Marka** — TopoHub (pi-Base atıfı korunur)
 - **Windows uyumluluğu** — build script ve glob path düzeltmeleri
 - **Questions sayfası güvenliği** — sonsuz döngü riski giderildi

@@ -10,14 +10,14 @@ TopoHub, topoloji eğitmeni Kadirhan Polat'ın öğrenciler için geliştirdiği
 - TopoHub kök repo (bu klasör): <https://github.com/kadirhanpolat/topohub>
 - TopoHub web fork: <https://github.com/kadirhanpolat/topohub-web>
 
-## Şu Anki Durum (2026-05-31 itibarıyla)
+## Şu Anki Durum (2026-06-11 itibarıyla)
 
-İlk geliştirme oturumu tamamlandı. Versiyon 0.2.0 yayında.
+Versiyon 0.3.0. Türkçe sözlük tamamlandı.
 
 **Çalışan özellikler:**
 - TopoHub markası (her yerde, pi-Base atfı korunarak)
 - TR/EN i18n + navbar dil seçici + localStorage kalıcılığı
-- 80 özellik + 70 uzay Türkçe sözlük (graceful fallback ile)
+- **243 özellik + 222 uzay Türkçe sözlük — %100 kapsam** (graceful fallback korundu)
 - Sunum modu (`?present=1`): büyük font, navbar gizli, ←/→ ile gezinme, konum sayacı
 - Sınıf modu (canlı oturum): hoca → öğrenci pathname + scrollY senkronu (polling, antivirüs-dayanıklı)
 - Tam ekran butonu (hem hoca hem öğrencide tek tıkla)
@@ -26,7 +26,6 @@ TopoHub, topoloji eğitmeni Kadirhan Polat'ın öğrenciler için geliştirdiği
 
 **Çalışmayanlar / sınırlamalar:**
 - Classroom state in-memory, single-instance — production'da Redis veya Cloudflare Durable Objects gerek
-- ~163 özellik + ~152 uzay henüz Türkçe çevirisiz (fallback EN)
 - Markdown body içerikleri EN (pi-base data'sından geliyor)
 - Henüz yayınlanmadı (local-only)
 
@@ -131,6 +130,13 @@ Geleneksel Türk matematik literatürü (Mamak, Çoker):
 - separable → ayrılabilir
 - connected → bağlantılı
 
+v0.3.0 oturumunda yerleşen ek kararlar:
+- cofinite → **sonlu-tümleyen** ("son-sonlu" değil — S000015/S000016 ile tutarlılık)
+- "with boundary" → **kenarlı** ("sınırlı" manifold sınırı değil, "sınırlı/bounded" ile karışır)
+- "punctured" → **delinmiş** ("silinmiş/deleted" değil — Knaster-Kuratowski yelpazesi vb.)
+- "meager" → **birinci kategorili** (Baire kategori standardı; "silik" non-standard)
+- "Locally X" → "Yerel X", "Weakly X" → "Zayıf X", "Countably X" → "Sayılabilir X", "Hereditarily X" → "Kalıtsal X"
+
 Modern alternatifleri tercih ederseniz JSON'larda değiştirin.
 
 ## Yol Haritası (Sıradakiler)
@@ -139,8 +145,7 @@ Modern alternatifleri tercih ederseniz JSON'larda değiştirin.
 1. **Deployment** — Cloudflare Pages'a yayınla. Compile output'unu statik bundle olarak yükle. Topology.pi-base.org modelini izle.
    - SvelteKit `@sveltejs/adapter-cloudflare` zaten kurulu (`viewer/package.json`).
    - Classroom state için Cloudflare Durable Object gerekli (in-memory yetmez).
-2. **Türkçe sözlük genişletme** — kalan ~163 özellik + ~152 uzay. Otomatik script ile (LLM destekli) ilk taslak üretip elle düzeltmek mantıklı.
-3. **Vurgu özelliği (sınıf modunda)** — hoca bir özelliğe tıkladığında öğrencinin ekranında o özellik vurgulansın. Pi-base'de zaten `emphasized` prop'u var Property linkinde.
+2. **Vurgu özelliği (sınıf modunda)** — hoca bir özelliğe tıkladığında öğrencinin ekranında o özellik vurgulansın. Pi-base'de zaten `emphasized` prop'u var Property linkinde.
 
 ### Orta vadeli
 4. **Quiz / değerlendirme motoru** — Questions sayfasının üzerine, öğrenci cevap girer, doğru/yanlış geri bildirim.
