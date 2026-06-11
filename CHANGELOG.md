@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.0] — 2026-06-11
+
+Türkçe terim sözlüğü tamamlandı.
+
+### Eklenen
+
+**Türkçe Terim Sözlüğü Genişletmesi**
+- `property-names/tr.json`: 83 → 243 giriş — 160 özellik için Türkçe karşılık eklendi
+- `space-names/tr.json`: 74 → 222 giriş — 148 uzay için Türkçe karşılık eklendi
+- Tüm pi-base özellik ve uzay adları artık Türkçe görüntüleniyor (graceful EN fallback korundu)
+
+### Terminoloji Düzeltmeleri (review sırasında)
+- P000056 "Meager" → "Birinci kategorili" (Baire kategori standardı)
+- P000237 "with boundary" → "Kenarlı" ("sınırlı/bounded" ile karışıklık önlendi)
+- P000222 + S000048 "son-sonlu" → "sonlu-tümleyen" (proje içi tutarlılık)
+
+---
+
 ## [0.2.0] — 2026-05-31
 
 Sınıf modu + sunum modu eklendi. Aynı geliştirme oturumunun ikinci yarısı.
